@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Nutrição</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+        <header>
+            <h1>Calcule o IMC</h1>
+        </header>
+
+        <section >
+            <div class="p-3 mb-2 bg-primary text-yellow">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="entrada" id="nome" ><br><br>
+            </div>
+            <div>
+                <label for="peso">Peso (Kg): </label>
+                <input type="text" name="entrada" id="peso" ><br><br>
+            </div>
+            <div>
+                <label for="altura">Altura (Metros):</label>
+                <input type="text" name="entrada" id="altura"><br><br>
+            </div>
+            <label id="calcular">
+                <input type="button" value="Calcular" onclick="calcularImc()"/><br><br>
+              </label>
+           
+              <div id="resultado">
+               <span>Resultado: </span>
+                <span id="imc"></span>
+                <span id="res"></span>
+              </div>
+              </div>
+        </section>
+
+    <footer>
+        <p>&copy;Gustavo Alessandro</p>
+    </footer>  
+    <script src="script.js">
+
+    </script>  
+</body>
+</html>
